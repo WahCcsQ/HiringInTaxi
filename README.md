@@ -25,25 +25,25 @@ DELETE /api/cars/:id - удалить машину</p>
 <h3>Проверка API с помощью curl</h3>
 
 <h4>Список машин:</h4>
-`
-curl http://localhost:3000/api/cars
-`
+<pre><code
+curl http://localhost:3000/api/cars>
+</code></pre>
 
 <h4>Добавление машины:</h4>
-`
+<pre><code
 curl -X POST http://localhost:3000/api/cars \
     -H "Content-Type: application/json" \
-    -d '{"car_model": "toyota supra", "number": "3NTQ305", "yom": "1995", "driver_id": "N"}'
-`
+    -d '{"car_model": "toyota supra", "number": "3NTQ305", "yom": "1995", "driver_id": "N"}'>
+</code></pre>
 
 <h4>Обновить элемент машины:</h4>
-`
+<pre><code
 curl -X PUT http://localhost:3000/api/cars/N* \
     -H "Content-Type: application/json" \
-    -d '{"car_model": "Nissan skyline r34"}'
-`
+    -d '{"car_model": "Nissan skyline r34"}'>
+</code></pre>
 
 <h4>Удалить машину:</h4>
-`
-curl -X DELETE http://localhost:3000/api/cars/N*
-`
+<pre><code
+curl -X DELETE http://localhost:3000/api/cars/N*>
+</code></pre>
