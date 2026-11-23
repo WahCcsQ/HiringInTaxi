@@ -25,9 +25,9 @@ DELETE /api/cars/:id - удалить машину</p>
 <h3>Проверка API с помощью curl</h3>
 
 <h4>Список машин:</h4>
-<pre><code
-curl http://localhost:3000/api/cars>
-</code></pre>
+<pre>
+curl http://localhost:3000/api/cars
+</pre>
 
 <h4>Добавление машины:</h4>
 <pre>
