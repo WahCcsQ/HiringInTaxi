@@ -30,20 +30,20 @@ curl http://localhost:3000/api/cars>
 </code></pre>
 
 <h4>Добавление машины:</h4>
-<pre><code
+<pre>
 curl -X POST http://localhost:3000/api/cars \
     -H "Content-Type: application/json" \
-    -d '{"car_model": "toyota supra", "number": "3NTQ305", "yom": "1995", "driver_id": "N"}'>
-</code></pre>
+    -d '{"car_model": "toyota supra", "number": "3NTQ305", "yom": "1995", "driver_id": "N"}'
+</pre>
 
 <h4>Обновить элемент машины:</h4>
-<pre><code
+<pre>
 curl -X PUT http://localhost:3000/api/cars/N* \
     -H "Content-Type: application/json" \
-    -d '{"car_model": "Nissan skyline r34"}'>
-</code></pre>
+    -d '{"car_model": "Nissan skyline r34"}'
+</pre>
 
 <h4>Удалить машину:</h4>
-<pre><code
-curl -X DELETE http://localhost:3000/api/cars/N*>
-</code></pre>
+<pre>
+curl -X DELETE http://localhost:3000/api/cars/N*
+</pre>
